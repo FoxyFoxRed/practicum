@@ -1,0 +1,23 @@
+# Dependency directories
+node_modules/
+
+# Serverless directories
+.serverless
+stats.json
+.vscode/
+dist/
+/swagger.json
+/imposter/swagger.json
+trash/
+/*.iml
+/.idea
+/.buildcache
+.cache
+.DS_Store
+Desktop.ini
+thumbs.db
+.env
+npm-debug.log
+npm-error.log
+yarn-debug.log
+yarn-error.log
