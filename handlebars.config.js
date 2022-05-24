@@ -1,4 +1,6 @@
 module.exports = {
-  layouts: 'layouts',
-  partials: 'partials',
+  data: 'views/json',
+  helpers: 'views/tools',
+  layouts: 'views/templates',
+  partials: 'views/partials',
 };
