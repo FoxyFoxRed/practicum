@@ -1,0 +1,169 @@
+@import "./variables.css";
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  line-height: 24px;
+  font-size: 14px;
+  color: $basictextcolor;
+  background: $basicgradientbg, $basicbg;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h3, p, ul, li, form {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+input, textarea {
+  height: 24px;
+  font-size: 12px;
+  line-height: 16px;
+  color: $basictextcolor;
+  font-family: 'Nunito', sans-serif;
+  background-color: rgba(199, 215, 240, 0.25);
+  border: none;
+  border-radius: 16px;
+  outline: none;
+  padding: 4px 16px;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+  max-height: 48px;
+}
+
+input:hover, textarea:hover {
+  background-color: rgba(199, 215, 240, 0.5);
+}
+
+input:focus, textarea:focus {
+  background-color: rgba(199, 215, 240, 0.5);
+}
+
+input:disabled, textarea:disabled {
+  color: rgba(65, 69, 77, 0.4);
+  background-color: rgba(199, 215, 240, 0.1);
+}
+
+input::placeholder, textarea::placeholder {
+  font-size: 12px;
+  lineHeight: 16px;
+  color: $basiccolor;
+}
+
+input:hover::placeholder, 
+textarea:hover::placeholder {
+  color: #6A83A8;
+}
+
+input:disabled::placeholder,
+textarea:disabled::placeholder {
+  color: rgba(145, 178, 227, 0.6);
+}
+
+input:invalid::placeholder,
+textarea:invalid::placeholder {
+  color: $errorcolor;
+}
+
+a {
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  color: $basiccolor;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+  color: #6A83A8;
+}
+
+.hidden {
+  display: none;
+}
+
+.flex-markup {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.flex-markup--column {
+  flex-direction: column;
+}
+
+.link-disabled {
+  pointer-events: none;
+  cursor: default; 
+  opacity: 0.4
+}
+
+.header {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.button {
+  min-width: 94;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: $basiccolor;
+  background-color: transparent;
+  border: 1px solid $basiccolor;
+  border-radius: 16px;
+  outline: none;
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  padding: 4px 16px;
+  vertical-align: middle;
+  text-align: center;
+  /* margin-right: 16px; */
+}
+
+.button:hover {
+  background-color: $basiccolorlight;
+}
+
+.button:active {
+  background-color: #$basiccolordark;
+}
+
+.button.disabled, .button:disabled {
+  cursor: default;
+  opacity: 0.4;
+}
+
+.button.disabled:hover, .button:disabled:hover {
+  background-color: $basiccolorlight;
+}
+

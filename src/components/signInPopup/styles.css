@@ -1,0 +1,15 @@
+.sign-in-popup {
+  display: flex;
+  flex-direction: column;
+  min-width: 280px;
+  height: 300px;
+}
+
+.sign-in-popup {
+  &__form {
+    height: 100%;
+  }
+  &__buttons-wrapper {
+    text-align: center;
+  }
+}

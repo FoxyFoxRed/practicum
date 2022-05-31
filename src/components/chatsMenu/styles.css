@@ -1,0 +1,33 @@
+@import "../../styles/variables.css";
+
+.chats-list-wrapper {
+  max-width: 400px;
+  height: 100vh;
+  border-radius: 0 16px 16px 0;
+  box-shadow: 6px 6px 6px $shadowcolor;
+  background-color: #fff;
+}
+
+.chats-list-wrapper {
+  &__search-container {
+    padding-top: 24px; 
+    padding-right: 16px;
+    padding-bottom: 16px; 
+    padding-left: 16px; 
+    border-bottom: 1px solid $basiccolor;
+  }
+
+  &__footer {
+    padding-top: 14px; 
+    padding-right: 16px;
+    padding-bottom: 24px; 
+    padding-left: 16px; 
+    border-top: 1px solid $basiccolor;
+    text-align: center;
+  }
+
+  &__list {
+    height: 100%;
+    overflow-y: scroll;
+  }
+}

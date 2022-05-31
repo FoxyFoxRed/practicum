@@ -1,0 +1,35 @@
+@import '../../styles/variables.css';
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper:not(:first-child) {
+  margin-top: 24px;
+}
+
+.input-wrapper {
+  &__input-error,
+  &__input-error::placeholder  {
+    color: $errorcolor;
+  }
+}
+
+.input-wrapper {
+  &__error {
+    position: absolute;
+    top: 24px;
+    left: 16px;
+    font-size: 10px;
+    line-height: 14px;
+    color: $errorcolor;
+  }
+}
+
+.input-wrapper {
+  &__error {
+    &--hide {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>
+    {{> title}}
+  </title>
+  {{#each stylesheet}}
+  <link rel="stylesheet" href="../styles/{{this}}">
+  {{/each}}
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  {{!-- {{> header}} --}}
+  {{!-- {{#block "main"}}
+  {{/block}} --}}
+  {{{body}}}
+  {{!-- {{> footer}} --}}
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+@import "./variables.css";
+
+.profile-card {
+  max-width: 354px;
+  width: 354px;
+  min-height: 529px;
+  padding: 16px;
+}
+
+.profile-card {
+  &__edit-form {
+    padding: 16px;
+    border: 1px solid $basiccolor;
+    border-radius: 16px;
+  }
+
+  &__edit-form {
+    margin-bottom: 24px;
+  }
+
+  &__fields {
+    flex-wrap: wrap;
+    row-gap: 24px;
+  }
+  &__avatar-container {
+    height: 80px;
+    width: 80px;
+    margin-right: 16px;
+    border-radius: 50%;
+    background-color: $basiccolor; 
+  }
+  &__avatar {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+  }
+
+  &__name-container {
+    width: calc(100% - 96px);
+  }
+
+  &__name {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__name:nth-child(2) {
+    margin-bottom: 24px;
+  }
+
+  &__legend-button {
+    margin-left: 12px;
+  }
+}

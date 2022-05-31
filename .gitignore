@@ -5,6 +5,7 @@ node_modules/
 .serverless
 stats.json
 .vscode/
+.parcel-cache
 dist/
 /swagger.json
 /imposter/swagger.json

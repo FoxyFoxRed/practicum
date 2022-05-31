@@ -1,0 +1,61 @@
+@import "../../styles/variables.css";
+
+.chat-item {
+  padding: 0 16px;
+}
+
+.chat-item {
+  &__wrapper {
+    padding: 16px 0;
+    justify-content: flex-start;
+    border-bottom: 1px solid $basiccolor;
+  }
+
+  &__avatar {
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+    border-radius: 50%;
+    background-color: $basiccolor; 
+  }
+
+  &__time {
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  &__message {
+    width: 85%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__counter {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    border: 1px solid $basicbg;
+    text-align: center;
+  }
+
+  &__counter-text {
+    font-size: 8px;
+    line-height: 8px;
+    vertical-align: text-top;
+    color: $basiccolor;
+    opacity: 0.8;
+  }
+
+  &__common-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__message-wrapper {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}

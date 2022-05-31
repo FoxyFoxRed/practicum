@@ -1,0 +1,41 @@
+.data-profile-text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.data-profile-title {
+  width: 96px;
+}
+
+.data-profile-input-wrapper {
+  width: 100%;
+}
+
+.data-profile-full-width {
+  width: 100%;
+}
+
+/* .data-profile-content {
+  margin-bottom: 24px;
+} */
+
+.data-profile-title ~ .data-profile-input-callapse:not(:first-child) {
+  /* width: calc(100% - 96px); */
+  margin-top: 0;
+}
+
+.data-profile-title ~ .data-profile-input-wrapper,
+.data-profile-title ~ .data-profile-content {
+  margin-bottom: 0;  /* //!! */
+  width: calc(100% - 96px);
+}
+
+/* .data-profile-title ~ .data-profile-input-wrapper > .data-profile-content {
+  margin-bottom: 0;
+} */
+
+.data-profile-input-wrapper > .data-profile-content {
+  margin-bottom: 0;
+}
+

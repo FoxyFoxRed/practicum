@@ -1,0 +1,32 @@
+{
+  "fields": [
+    {
+      "title": "Логин:",
+      "name": "login",
+      "value": "login",
+      "placeholder": "Логин",
+      "type": "text"
+    },
+    {
+      "title": "Имя в чате:",
+      "name": "display_name",
+      "value": "Имя",
+      "placeholder": "Имя в чате",
+      "type": "text"
+    },
+    {
+      "title": "Почта:",
+      "name": "email",
+      "value": "email@ru",
+      "placeholder": "Email",
+      "type": "email"
+    },
+    {
+      "title": "Телефон:",
+      "name": "telephone",
+      "value": "8 900 90 90",
+      "placeholder": "Телефон",
+      "type": "tel"
+    }
+  ]
+}

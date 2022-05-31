@@ -1,6 +1,7 @@
 module.exports = {
-  data: 'views/json',
-  helpers: 'views/tools',
-  layouts: 'views/templates',
-  partials: 'views/partials',
+  data: 'src/data',
+  // helpers: 'views/tools',
+  layouts: 'src/layouts',
+  // partials: 'views/partials',
+  partials: 'src/components',
 };

@@ -1,0 +1,21 @@
+---
+title: Home page
+stylesheet:
+- index.css
+- ../components/popup/styles.css
+- ../components/cards/styles.css
+- ../components/input/styles.css
+- ../components/form/styles.css
+- ../components/iconButton/styles.css
+- ../components/chatsMenu/styles.css
+- ../components/chatItem/styles.css
+- ../components/chatWindow/styles.css
+- ../components/messageMenu/styles.css
+---
+
+{{!< baseLayout}}
+
+<main class="flex-markup chat-wrapper">
+  {{> chatsMenu/chatsMenu}}
+  {{> chatWindow/chatWindow isEmpty=""}}
+</main>

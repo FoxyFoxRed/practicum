@@ -1,0 +1,16 @@
+{{#> popup/popup popupClasses="message-menu"}}
+<div class="flex-markup message-menu__person-info-wrapper">
+  <div class="flex-markup message-menu__person-info">
+    <div class="message-menu__avatar-container">
+      <img class="message-menu__avatar" src="{{avatar}}" alt="" />
+    </div>
+    <p class="message-menu__name">{{name}}</p>
+  </div>
+  {{> iconButton/iconButton srcIcon="../../assets/menu.svg" }}
+</div>
+
+<div class="flex-markup">
+  {{> textarea/textarea textareaClasses="message-menu__message"  name="message" placeholder="Текст сообщения" }}
+  {{> iconButton/iconButton srcIcon="../../assets/send.svg" }}
+</div>
+{{/ popup/popup}}

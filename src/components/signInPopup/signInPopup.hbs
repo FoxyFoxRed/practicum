@@ -1,0 +1,18 @@
+{{#> popup/backdrop}}
+{{#> cards/cards cardsClasses="sign-in-popup"}}
+
+<h1 class="header">Вход</h1>
+
+{{#>form/form formClasses="sign-in-popup__form" }}
+<div>
+  {{> input/input type="text" name="login" placeholder="Логин" }}
+  {{> input/input type="text" name="password" placeholder="Пароль" }}
+</div>
+<div class="sign-in-popup__buttons-wrapper">
+  {{> input/input inputClasses="button" type="submit" name="submit_sign_in" value="Sign in" }}
+  <a href="./signUpPage.hbs">Sign up</a>
+</div>
+{{/form/form}}
+
+{{/cards/cards}}
+{{/popup/backdrop}}

@@ -1,0 +1,33 @@
+<section class="chat-window">
+  {{#if isEmpty}}
+
+  {{#> popup/backdrop}}
+  {{#> popup/popup popupClasses="chat-window__message-empty" }}
+  <p class="chat-window__message-empty-text">Выберите чат для начала диалога</p>
+  {{/ popup/popup}}
+  {{/ popup/backdrop}}
+
+  {{else}}
+
+  <div>
+    <p class="chat-window__date">19 мая</p>
+  </div>
+  <div class="flex-markup flex-markup--column chat-window__messages">
+    {{#> popup/popup popupClasses="chat-window__message chat-window__message--interlocuter"}}
+    <p>
+      Bla! Bla bla blaaaaa bla abla balla bla abla bld bkrtk rgm Rmkm gmk. FKen rnj nrjngjn gmkmk mkrng jnrn mmk
+      mrkgnk
+      nknknknk rnknk rknnknnk nrknknk rnkmnk
+    </p>
+    {{/ popup/popup}}
+    {{#> popup/popup popupClasses="chat-window__message"}}
+    <p>
+      Bla! Bla bla blaaaaa bla abla balla bla abla bld bkrtk rgm Rmkm gmk. FKen rnj nrjngjn gmkmk mkrng jnrn mmk
+      mrkgnk
+      nknknknk rnknk rknnknnk nrknknk rnkmnk
+    </p>
+    {{/ popup/popup}}
+  </div>
+  {{> messageMenu/messageMenu avatar="#" name="Lalalend Lalalendov"}}
+  {{/if}}
+</section>

@@ -1,0 +1,14 @@
+$basicbg: #C7D7F0;
+$basicgradientbg: linear-gradient(45deg, rgba(172, 112, 166, 0.2), rgba(156, 112, 172, 0), rgba(156, 112, 172, 0));
+
+$errorcolor: #AB0340;
+
+$basiccolor: #91B2E3;
+$basiccolorlight: #EFF3FB;
+$basiccolordark: #D3E0F4;
+
+$basictextcolor: #41454D;
+
+$successcolor: #71D9A0;
+
+$shadowcolor: rgba(56, 61, 69, 0.25);

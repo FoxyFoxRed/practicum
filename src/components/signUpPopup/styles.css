@@ -1,0 +1,15 @@
+.sign-up-popup {
+  display: flex;
+  flex-direction: column;
+  min-width: 280px;
+  height: 522px;
+}
+
+.sign-up-popup {
+  &__form {
+    height: 100%;
+  }
+  &__buttons-wrapper {
+    text-align: center;
+  }
+}

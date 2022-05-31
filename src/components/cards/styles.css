@@ -1,0 +1,28 @@
+@import "../../styles/variables.css";
+
+.card {
+  box-shadow: 6px 6px 6px $shadowcolor;
+  z-index: 1;
+}
+
+.second-card {
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 32px);
+  cursor: pointer;
+  transform: translate(-50%, -50%) scale(0.9);
+  z-index: 0;
+}
+
+.second-card:hover {
+  background-color: $basiccolorlight;
+}
+
+
+.second-card {
+  &__icon {
+    position: absolute;
+    right: 16;
+    top: 16;
+  }
+}

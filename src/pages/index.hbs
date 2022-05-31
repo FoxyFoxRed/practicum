@@ -1,0 +1,48 @@
+---
+title: Home page
+stylesheet:
+- index.css
+- ../components/popup/styles.css
+- ../components/cards/styles.css
+- ../components/input/styles.css
+- ../components/form/styles.css
+- ../components/iconButton/styles.css
+- ../components/profileDataItem/styles.css
+- profileEdit.css
+---
+
+{{!< baseLayout}}
+
+<main>
+  {{#> popup/backdrop}}
+  {{#> cards/cards icon="../assets/exit.css" cardsClasses="profile-card" }}
+  <form name="user-form" class="profile-card__edit-form">
+    <div class="flex-markup profile-card__fields">
+      <div class="profile-card__avatar-container">
+        <img class="profile-card__avatar" width="80" height="80" alt="avatar" />
+      </div>
+      <div class="profile-card__name-container">
+        {{> profileDataItem/profileDataItem valueClasses="profile-card__name" name="name" value="Name" placeholder="Имя" type="text" }}
+        {{> profileDataItem/profileDataItem valueClasses="profile-card__name" name="second-name" value="Second name" placeholder="Фамилия" type="text" }}
+      </div>
+      {{#each profile.fields}}
+      {{> profileDataItem/profileDataItem fieldTitle=this.title name=this.name value=this.value placeholder=this.placeholder type=this.type }}
+      {{/each}}
+    </div>
+  </form>
+
+  <form name="security-form" class="profile-card__edit-form">
+    <div class="flex-markup">
+      <p class="profile-card__name">Пароль</p>
+      {{> iconButton/iconButton srcIcon="../assets/edit.svg"}}
+    </div>
+    {{> input/input name="password" placeholder="Пароль" type="password" }}
+    {{> input/input name="password_again" placeholder="Пароль (ещё раз)" type="password" }}
+  </form>
+  <div>
+    {{> iconButton/iconButton  srcIcon="../assets/back.svg"}}
+    <span class="profile-card__legend-button">Назад в чат</span>
+  </div>
+  {{/ cards/cards}}
+  {{/ popup/backdrop}}
+</main>
