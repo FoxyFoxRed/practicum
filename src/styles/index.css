@@ -36,6 +36,7 @@ p {
 }
 
 input, textarea {
+  width: 100%;
   height: 24px;
   font-size: 12px;
   line-height: 16px;

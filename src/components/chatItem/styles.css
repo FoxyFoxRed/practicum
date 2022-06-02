@@ -13,6 +13,7 @@
 
   &__avatar {
     width: 32px;
+    min-width: 32px;
     height: 32px;
     margin-right: 16px;
     border-radius: 50%;
@@ -32,8 +33,9 @@
   }
 
   &__counter {
-    width: 11px;
-    height: 11px;
+    min-width: 14px;
+    height: 14px;
+    padding: 2;
     border-radius: 50%;
     border: 1px solid $basicbg;
     text-align: center;
@@ -41,7 +43,7 @@
 
   &__counter-text {
     font-size: 8px;
-    line-height: 8px;
+    line-height: 4px;
     vertical-align: text-top;
     color: $basiccolor;
     opacity: 0.8;

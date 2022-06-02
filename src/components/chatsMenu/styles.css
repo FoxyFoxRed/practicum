@@ -17,6 +17,11 @@
     border-bottom: 1px solid $basiccolor;
   }
 
+  &__search {
+    width: 100%;
+   margin-right: 24px;
+  }
+
   &__footer {
     padding-top: 14px; 
     padding-right: 16px;

@@ -1,4 +1,7 @@
 {{#if fieldTitle}}<p class="data-profile-text data-profile-title">{{fieldTitle}}</p>{{/if}}
-{{> input/input inputWrapClasses="data-profile-input-callapse data-profile-input-wrapper hidden" inputClasses="data-profile-content data-profile-full-width" type="{{type}}"
+{{#if edit}}
+{{> input/input inputWrapClasses="data-profile-input-callapse data-profile-input-wrapper" inputClasses="data-profile-content data-profile-full-width" type="{{type}}"
 name="{{name}}" placeholder="{{placeholder}}" value="{{value}}" }}
+{{else}}
 <p class="{{valueClasses}} data-profile-text data-profile-content data-profile-full-width">{{value}}</p>
+{{/if}}
