@@ -1,17 +1,27 @@
 @import "./variables.css";
 
 .profile-card {
+  flex-wrap: wrap;
   max-width: 354px;
   width: 354px;
-  min-height: 529px;
+  min-height: 616px;
   padding: 16px;
+}
+
+.profile-card-second-card {
+  left: calc(50% + 56px);
 }
 
 .profile-card {
   &__edit-form {
+    width: 100%;
     padding: 16px;
     border: 1px solid $basiccolor;
     border-radius: 16px;
+  }
+
+  &__back-container {
+    align-self: flex-end;
   }
 
   &__edit-form {
@@ -23,6 +33,7 @@
     row-gap: 24px;
   }
   &__avatar-container {
+    position: relative;
     height: 80px;
     width: 80px;
     margin-right: 16px;
@@ -33,6 +44,20 @@
     height: 80px;
     width: 80px;
     border-radius: 50%;
+  }
+
+  &__avatar-field-wrapper {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    background: url(../assets/image.svg) rgba(255, 255, 255, 0.5) no-repeat center;
+  }
+
+  &__avatar-field {
+    visibility: hidden;
   }
 
   &__name-container {
@@ -50,5 +75,15 @@
 
   &__legend-button {
     margin-left: 12px;
+  }
+
+  &__btn-container {
+    margin-top: 24px;
+    text-align: right;
+  }
+
+  &__btn-container > button:nth-child(2),
+  &__btn-password-container > button:nth-child(2) {
+    margin-left: 16px;
   }
 }

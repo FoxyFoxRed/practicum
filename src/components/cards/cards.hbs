@@ -4,8 +4,11 @@
 {{/if}}
 {{/popup/popup }}
 
-{{#> popup/popup popupClasses=(append (append "card second-card " cardsClasses) secondCardClasses)}}
-{{#if icon}}
-<img src="{{icon}}" class="second-card__icon" width="24" height="24" alt="icon">
-{{/if}}
+{{#> popup/popup hrefLink=cardLink popupClasses=(append (append cardsClasses " card second-card ")
+secondCardClasses)}}
+<div>
+  {{#if srcIconCard}}
+  <img src={{srcIconCard}} class="second-card__icon" width="24" height="24" alt="icon">
+  {{/if}}
+</div>
 {{/popup/popup}}

@@ -105,6 +105,17 @@ a:active {
   color: #6A83A8;
 }
 
+.link, 
+.link:hover, 
+.link:active {
+  display: inline-block;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
 .hidden {
   display: none;
 }

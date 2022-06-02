@@ -1,0 +1,16 @@
+---
+title: Home page
+stylesheet:
+- index.css
+- ../components/popup/styles.css
+- ../components/cards/styles.css
+- ../components/iconButton/styles.css
+- ../components/errorModal/styles.css
+- profileEdit.css
+---
+
+{{!< baseLayout}}
+
+<main>
+  {{> errorModal/errorModal imageSrc="../assets/404.svg" errorText="Упс! Лучше вернуться назад"  }}
+</main>

@@ -1,0 +1,20 @@
+.error-modal {
+  min-width: 280px;
+  min-height: 280px;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-modal-text {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.second-card-with-img {
+  left: calc(50% + 40px);
+}
+
+.second-card-with-img img {
+  right: 11px;
+}

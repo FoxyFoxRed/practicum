@@ -4,9 +4,3 @@
   min-width: 24px;
   padding: 4px 4px;
 }
-
-.iconButton {
-  &__icon {
-    vertical-align: middle;
-  }
-}

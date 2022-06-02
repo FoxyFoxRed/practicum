@@ -1,0 +1,72 @@
+---
+title: Home page
+stylesheet:
+- index.css
+- ../components/popup/styles.css
+- ../components/cards/styles.css
+- ../components/input/styles.css
+- ../components/form/styles.css
+- ../components/iconButton/styles.css
+- ../components/profileDataItem/styles.css
+- profileEdit.css
+---
+
+{{!< baseLayout}}
+
+<main>
+  {{#> popup/backdrop}}
+  {{#> cards/cards cardLink="./index.hbs" srcIconCard='../assets/exit.svg' cardsClasses="flex-markup profile-card" secondCardClasses="profile-card-second-card" }}
+  <form name="user-form" class="profile-card__edit-form">
+    <div class="flex-markup profile-card__fields">
+      <div class="profile-card__avatar-container">
+        {{#if avatar}}
+        <img src={{avatar}} class=" profile-card__avatar" width="80" height="80" alt="avatar" />
+        {{/if}}
+        <label class="profile-card__avatar-field-wrapper hidden">
+          <input class="profile-card__avatar-field" type='file' name="avatar" />
+        </label>
+      </div>
+      <div class="profile-card__name-container">
+        {{> profileDataItem/profileDataItem valueClasses="profile-card__name" name="name" value="Name" placeholder="Имя" type="text" }}
+        {{> profileDataItem/profileDataItem valueClasses="profile-card__name" name="second-name" value="Second name" placeholder="Фамилия" type="text" }}
+      </div>
+      {{#each profile.fields}}
+      {{> profileDataItem/profileDataItem fieldTitle=this.title name=this.name value=this.value placeholder=this.placeholder type=this.type }}
+      {{/each}}
+    </div>
+    <div class="profile-card__btn-container">
+      {{#if profile.config.edit}}
+      {{> iconButton/iconButton srcIcon="../assets/accept.svg"}}
+      {{> iconButton/iconButton srcIcon="../assets/cancel.svg"}}
+      {{else}}
+      {{> iconButton/iconButton srcIcon="../assets/edit.svg"}}
+      {{/if}}
+    </div>
+  </form>
+
+  <form name="security-form" class="profile-card__edit-form">
+    <div class="flex-markup">
+      <p class="profile-card__name">Пароль</p>
+      <div class="profile-card__btn-password-container">
+        {{#if profile.config.edit}}
+        {{> iconButton/iconButton srcIcon="../assets/accept.svg"}}
+        {{> iconButton/iconButton srcIcon="../assets/cancel.svg"}}
+        {{else}}
+        {{> iconButton/iconButton srcIcon="../assets/edit.svg"}}
+        {{/if}}
+      </div>
+    </div>
+    {{#if profile.config.edit}}
+    {{> input/input name="password" placeholder="Пароль" type="password" }}
+    {{> input/input name="password_again" placeholder="Пароль (ещё раз)" type="password" }}
+    {{/if}}
+  </form>
+  <div class="profile-card__back-container">
+    <a href="./chat.hbs" class="link">
+      {{> iconButton/iconButton  srcIcon="../assets/back.svg"}}
+      <span class="profile-card__legend-button">Назад в чат</span>
+    </a>
+  </div>
+  {{/ cards/cards}}
+  {{/ popup/backdrop}}
+</main>

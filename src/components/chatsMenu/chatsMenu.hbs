@@ -1,12 +1,14 @@
 <section class="flex-markup flex-markup--column chats-list-wrapper">
   <div class="flex-markup chats-list-wrapper__search-container">
     {{> input/input type="search" name="search" placeholder="Поиск" }}
-    {{> iconButton/iconButton srcIcon="../../assets/add-icon.svg" }}
+    {{> iconButton/iconButton srcIcon="../assets/add-icon.svg" }}
   </div>
   <ul class="chats-list-wrapper__list">
     {{> chatItem/chatItem avatar="" name="Name" time="10:30" message="Rmkmk mKmkm Kmk EKMkmlll mm mmkmk mk,mkmk emkm emfkmk mekfmkmk mekmfkm" count="2" }}
   </ul>
   <div class="chats-list-wrapper__footer">
-    <button class="button">Профиль</button>
+    <a href="./profileEdit.hbs" class="link">
+      <button class="button">Профиль</button>
+    </a>
   </div>
 </section>

@@ -28,5 +28,8 @@
       "placeholder": "Телефон",
       "type": "tel"
     }
-  ]
+  ],
+  "config": {
+    "edit": false
+  }
 }

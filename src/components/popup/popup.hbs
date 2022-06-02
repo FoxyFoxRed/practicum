@@ -1,5 +1,13 @@
+{{#if hrefLink}}
+<a href={{hrefLink}} class="popup-section__paper link {{popupClasses}}">
+  {{#if @partial-block}}
+  {{> @partial-block }}
+  {{/if}}
+</a>
+{{else}}
 <section class="popup-section__paper {{popupClasses}}">
   {{#if @partial-block}}
   {{> @partial-block }}
   {{/if}}
 </section>
+{{/if}}
