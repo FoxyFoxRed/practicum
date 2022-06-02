@@ -1,0 +1,30 @@
+.chats-list-wrapper {
+  max-width: 400px;
+  height: 100vh;
+  background-color: #fff;
+  border-radius: 0 16px 16px 0;
+  box-shadow: 6px 6px 6px #383d4540;
+}
+
+.chats-list-wrapper__search-container {
+  border-bottom: 1px solid #91b2e3;
+  padding: 24px 16px 16px;
+}
+
+.chats-list-wrapper__search {
+  width: 100%;
+  margin-right: 24px;
+}
+
+.chats-list-wrapper__footer {
+  text-align: center;
+  border-top: 1px solid #91b2e3;
+  padding: 14px 16px 24px;
+}
+
+.chats-list-wrapper__list {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+/*# sourceMappingURL=chat.2e6d052b.css.map */

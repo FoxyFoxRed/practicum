@@ -1,0 +1,16 @@
+.sign-in-popup {
+  min-width: 280px;
+  height: 300px;
+  flex-direction: column;
+  display: flex;
+}
+
+.sign-in-popup__form {
+  height: 100%;
+}
+
+.sign-in-popup__buttons-wrapper {
+  text-align: center;
+}
+
+/*# sourceMappingURL=pages.cf9453b6.css.map */

@@ -1,0 +1,37 @@
+.message-menu {
+  padding: 24px;
+}
+
+.message-menu__person-info-wrapper {
+  margin-bottom: 24px;
+}
+
+.message-menu__person-info {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.message-menu__avatar-container {
+  height: 24px;
+  width: 24px;
+  background-color: #91b2e3;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.message-menu__avatar {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+}
+
+.message-menu__name {
+  font-weight: 600;
+}
+
+.message-menu__message {
+  width: 100%;
+  margin-right: 24px;
+}
+
+/*# sourceMappingURL=chat.cdb52a9a.css.map */

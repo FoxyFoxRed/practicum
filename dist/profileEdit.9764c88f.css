@@ -1,0 +1,88 @@
+.profile-card {
+  max-width: 354px;
+  width: 354px;
+  min-height: 530px;
+  flex-wrap: wrap;
+  padding: 16px;
+}
+
+.profile-card-second-card {
+  left: calc(50% + 56px);
+}
+
+.profile-card__edit-form {
+  width: 100%;
+  border: 1px solid #91b2e3;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.profile-card__back-container {
+  align-self: flex-end;
+}
+
+.profile-card__edit-form {
+  margin-bottom: 24px;
+}
+
+.profile-card__fields {
+  flex-wrap: wrap;
+  row-gap: 24px;
+}
+
+.profile-card__avatar-container {
+  height: 80px;
+  width: 80px;
+  background-color: #91b2e3;
+  border-radius: 50%;
+  margin-right: 16px;
+  position: relative;
+}
+
+.profile-card__avatar {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+.profile-card__avatar-field-wrapper {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  background: #ffffff80 url("image.02bf5529.svg") center no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.profile-card__avatar-field {
+  visibility: hidden;
+}
+
+.profile-card__name-container {
+  width: calc(100% - 96px);
+}
+
+.profile-card__name {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.profile-card__name:nth-child(2) {
+  margin-bottom: 24px;
+}
+
+.profile-card__legend-button {
+  margin-left: 12px;
+}
+
+.profile-card__btn-container {
+  text-align: right;
+  margin-top: 24px;
+}
+
+.profile-card__btn-container > button:nth-child(2), .profile-card__btn-password-container > button:nth-child(2) {
+  margin-left: 16px;
+}
+
+/*# sourceMappingURL=profileEdit.9764c88f.css.map */

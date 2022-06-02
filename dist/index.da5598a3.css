@@ -1,0 +1,26 @@
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper:not(:first-child) {
+  margin-top: 24px;
+}
+
+.input-wrapper__input-error, .input-wrapper__input-error::placeholder {
+  color: #ab0340;
+}
+
+.input-wrapper__error {
+  color: #ab0340;
+  font-size: 10px;
+  line-height: 14px;
+  position: absolute;
+  top: 24px;
+  left: 16px;
+}
+
+.input-wrapper__error--hide {
+  display: none;
+}
+
+/*# sourceMappingURL=index.da5598a3.css.map */

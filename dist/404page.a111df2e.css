@@ -1,0 +1,22 @@
+.error-modal {
+  min-width: 280px;
+  min-height: 280px;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-modal-text {
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.second-card-with-img {
+  left: calc(50% + 40px);
+}
+
+.second-card-with-img img {
+  right: 11px;
+}
+
+/*# sourceMappingURL=404page.a111df2e.css.map */

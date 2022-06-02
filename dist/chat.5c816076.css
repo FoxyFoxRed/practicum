@@ -1,0 +1,25 @@
+.card {
+  z-index: 1;
+  box-shadow: 6px 6px 6px #383d4540;
+}
+
+.second-card {
+  cursor: pointer;
+  z-index: 0;
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 32px);
+  transform: translate(-50%, -50%)scale(.9);
+}
+
+.second-card:hover {
+  background-color: #eff3fb;
+}
+
+.second-card__icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+/*# sourceMappingURL=chat.5c816076.css.map */

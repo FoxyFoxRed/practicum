@@ -1,0 +1,1 @@
+{"mappings":"AAAA","sources":["src/components/iconButton/styles.css"],"sourcesContent":[".iconButton {\n  height: 24px;\n  width: 24px;\n  min-width: 24px;\n  padding: 4px 4px;\n}"],"names":[],"version":3,"file":"index.2ed7f9c5.css.map","sourceRoot":"/__parcel_source_root/"}

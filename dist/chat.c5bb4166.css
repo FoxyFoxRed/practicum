@@ -1,0 +1,16 @@
+.sign-up-popup {
+  min-width: 280px;
+  height: 522px;
+  flex-direction: column;
+  display: flex;
+}
+
+.sign-up-popup__form {
+  height: 100%;
+}
+
+.sign-up-popup__buttons-wrapper {
+  text-align: center;
+}
+
+/*# sourceMappingURL=chat.c5bb4166.css.map */

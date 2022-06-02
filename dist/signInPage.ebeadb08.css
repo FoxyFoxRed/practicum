@@ -1,0 +1,123 @@
+body {
+  color: #41454d;
+  background: linear-gradient(45deg, #ac70a633, #9c70ac00, #9c70ac00), #c7d7f0;
+  margin: 0;
+  padding: 0;
+  font-family: Nunito, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+h1, form {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  height: 24px;
+  color: #41454d;
+  background-color: #c7d7f040;
+  border: none;
+  border-radius: 16px;
+  outline: none;
+  padding: 4px 16px;
+  font-family: Nunito, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+input:hover, input:focus {
+  background-color: #c7d7f080;
+}
+
+input:disabled {
+  color: #41454d66;
+  background-color: #c7d7f01a;
+}
+
+input::placeholder {
+  lineHeight: 16px;
+  color: #91b2e3;
+  font-size: 12px;
+}
+
+input:hover::placeholder {
+  color: #6a83a8;
+}
+
+input:disabled::placeholder {
+  color: #91b2e399;
+}
+
+input:invalid::placeholder {
+  color: #ab0340;
+}
+
+a {
+  color: #91b2e3;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 14px;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: #6a83a8;
+  text-decoration: underline;
+}
+
+.link-disabled {
+  pointer-events: none;
+  cursor: default;
+  opacity: .4;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.button {
+  min-width: 94px;
+  color: #91b2e3;
+  cursor: pointer;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #91b2e3;
+  border-radius: 16px;
+  outline: none;
+  padding: 4px 16px;
+  font-family: Nunito, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: #eff3fb;
+}
+
+.button:active {
+  background-color: # #d3e0f4;
+}
+
+.button.disabled, .button:disabled {
+  cursor: default;
+  opacity: .4;
+}
+
+.button.disabled:hover, .button:disabled:hover {
+  background-color: #eff3fb;
+}
+
+/*# sourceMappingURL=signInPage.ebeadb08.css.map */

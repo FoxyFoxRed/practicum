@@ -1,0 +1,1 @@
+{"mappings":"AAAA","sources":["src/components/form/styles.css"],"sourcesContent":[".form {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  align-items: center;\n}"],"names":[],"version":3,"file":"chat.962881ef.css.map","sourceRoot":"/__parcel_source_root/"}
