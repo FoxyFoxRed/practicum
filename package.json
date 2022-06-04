@@ -2,10 +2,10 @@
   "name": "practicum",
   "version": "1.0.0",
   "description": "Practicum project for study",
-  "main": "index.js",
+  "source": "src/pages/index.html",
   "scripts": {
     "build": "parcel build src/pages/index.hbs --no-cache --public-url ./",
-    "start": "parcel src/pages/index.hbs --no-cache && parsel watch ./*",
+    "start": "npm run build && node server.js",
     "test": "test"
   },
   "repository": {
@@ -31,6 +31,7 @@
     "@anikin/parcel-transformer-handlebars": "^1.0.9",
     "@parcel/optimizer-cssnano": "^2.6.0",
     "autoprefixer": "^10.4.7",
+    "express": "^4.18.1",
     "handlebars": "^4.7.7",
     "parcel": "^2.5.0",
     "postcss": "^8.4.14",
