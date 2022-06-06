@@ -118,7 +118,7 @@ a:active {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .flex-markup {

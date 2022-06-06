@@ -35,12 +35,7 @@ stylesheet:
       {{/each}}
     </div>
     <div class="profile-card__btn-container">
-      {{#if profile.config.edit}}
-      {{> iconButton/iconButton srcIcon="../assets/accept.svg"}}
-      {{> iconButton/iconButton srcIcon="../assets/cancel.svg"}}
-      {{else}}
-      {{> iconButton/iconButton srcIcon="../assets/edit.svg"}}
-      {{/if}}
+      {{> btnsPanel/btnsPanel idCancel="profile-cancel-btn" idAccept="profile-accept-btn" idEdit="profile-edit-btn" form="user-form" btnClasses="hidden" }}
     </div>
   </form>
 
@@ -48,18 +43,13 @@ stylesheet:
     <div class="flex-markup">
       <p class="profile-card__name">Пароль</p>
       <div class="profile-card__btn-password-container">
-        {{#if profile.config.edit}}
-        {{> iconButton/iconButton srcIcon="../assets/accept.svg"}}
-        {{> iconButton/iconButton srcIcon="../assets/cancel.svg"}}
-        {{else}}
-        {{> iconButton/iconButton srcIcon="../assets/edit.svg"}}
-        {{/if}}
+        {{> btnsPanel/btnsPanel idCancel="security-cancel-btn" idAccept="security-accept-btn" idEdit="security-edit-btn" form="security-form" btnClasses="hidden" }}
       </div>
     </div>
-    {{#if profile.config.edit}}
-    {{> input/input name="password" placeholder="Пароль" type="password" }}
-    {{> input/input name="password_again" placeholder="Пароль (ещё раз)" type="password" }}
-    {{/if}}
+
+    {{> input/input  inputWrapClasses="hidden" name="password" placeholder="Пароль" type="password" }}
+    {{> input/input inputWrapClasses="hidden" name="password_again" placeholder="Пароль (ещё раз)" type="password" }}
+
   </form>
   <div class="profile-card__back-container">
     <a href="./chat.hbs" class="link">
